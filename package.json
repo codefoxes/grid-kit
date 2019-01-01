@@ -16,7 +16,7 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output dist/grid-kit.css dist/grid-kit.css",
     "build-cleancss": "cleancss -o dist/grid-kit.min.css dist/grid-kit.css",
     "build-clean": "rimraf dist",
-    "build-sass": "node-sass --output-style expanded --source-map true ./scss/grid-kit.scss ./dist/grid-kit.css",
+    "build-sass": "node-sass --output-style expanded --source-map true scss/grid-kit.scss dist/grid-kit.css",
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch"
   },
