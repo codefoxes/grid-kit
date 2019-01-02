@@ -1,57 +1,62 @@
 .container {
-	display: grid;
-	grid-gap: 1rem;
+	@extend %base-grid;
 	margin: 0 auto;
+
+	.grid {
+		@extend %base-grid;
+	}
 
 	&.fix-width {
 		max-width: $fix-width;
 	}
 }
 
-.one {
-	grid-column: auto / span 1;
-}
+.col {
+	&-1 {
+		grid-column: auto / span 1;
+	}
 
-.two {
-	grid-column: auto / span 2
-}
+	&-2 {
+		grid-column: auto / span 2
+	}
 
-.three {
-	grid-column: auto / span 3
-}
+	&-3 {
+		grid-column: auto / span 3
+	}
 
-.four {
-	grid-column: auto / span 4
-}
+	&-4 {
+		grid-column: auto / span 4
+	}
 
-.five {
-	grid-column: auto / span 5
-}
+	&-5 {
+		grid-column: auto / span 5
+	}
 
-.six {
-	grid-column: auto / span 6
-}
+	&-6 {
+		grid-column: auto / span 6
+	}
 
-.seven {
-	grid-column: auto / span 7
-}
+	&-7 {
+		grid-column: auto / span 7
+	}
 
-.eight {
-	grid-column: auto / span 8
-}
+	&-8 {
+		grid-column: auto / span 8
+	}
 
-.nine {
-	grid-column: auto / span 9
-}
+	&-9 {
+		grid-column: auto / span 9
+	}
 
-.ten {
-	grid-column: auto / span 10
-}
+	&-10 {
+		grid-column: auto / span 10
+	}
 
-.eleven {
-	grid-column: auto / span 11
-}
+	&-11 {
+		grid-column: auto / span 11
+	}
 
-.twelve {
-	grid-column: auto / span 12
+	&-12 {
+		grid-column: auto / span 12
+	}
 }
