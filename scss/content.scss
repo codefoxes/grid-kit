@@ -1,6 +1,15 @@
+$body-line-height: 1.5;
+
 $content-heading-color: $grey-dark;
 $content-heading-weight: $weight-semibold;
 $content-heading-line-height: 1.125;
+
+body {
+	color: $grey-dark;
+	font-size: $font-size-normal;
+	font-weight: $weight-normal;
+	line-height: $body-line-height;
+}
 
 .container {
 	@extend %block;
@@ -9,7 +18,7 @@ $content-heading-line-height: 1.125;
 	li + li {
     	margin-top: 0.25em;
 	}
-  
+
  	// Block
 	p,
 	dl,

@@ -9,7 +9,7 @@
 		body {
 			font-family: sans-serif;
 			font-weight: 100;
-			color: #333;
+			padding-bottom: 25px;
 		}
 		.col-style {
 			background: #673ab7;
@@ -75,6 +75,35 @@
 			<input class="col-9" type="password" id="password">
 			<label class="col-3" for="bio">Bio</label>
 			<textarea class="col-9" id="bio"></textarea>
+		</form>
+
+		<div class="col-6"></div>
+
+		<form class="col-6">
+			<div class="field">
+				<label class="label" for="gender">Gender</label>
+				<select id="gender">
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+				<p class="help">What is your gender?</p>
+			</div>
+			<div class="field">
+				<label class="checkbox">
+					<input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+				</label>
+			</div>
+			<div class="field">
+				<label>
+					<input type="radio" name="question"> Yes
+				</label>
+				<label>
+					<input type="radio" name="question"> No
+				</label>
+			</div>
+			<div class="field">
+				<button class="button" type="button">Submit</button>
+			</div>
 		</form>
 
 	</main>
